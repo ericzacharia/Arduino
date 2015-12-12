@@ -1,0 +1,83 @@
+#include <VarSpeedServo.h> 
+ 
+VarSpeedServo myservo;  // create servo object to control a servo 
+                        // a maximum of eight servo objects can be created 
+ 
+const int servoPin = 10; // the digital pin used for the servo
+ 
+void setup() { 
+  myservo.attach(servoPin);  // attaches the servo on pin 10 to the servo object
+  myservo.write(0,255,true); // set the intial position of the servo, as fast as possible, wait until done
+} 
+
+void loop() {
+  // write(degrees 0-180, speed 1-255, wait to complete true-false)
+  myservo.write( 87.5000, 2.05,true);  // All the Way to the Left  
+  
+  myservo.write( 87.5871, 2.05,true);
+  myservo.write( 87.6818, 2.05,true);
+  myservo.write( 87.7847, 2.05,true);
+  myservo.write( 87.8966, 2.05,true);
+  myservo.write( 88.0183, 2.05,true);
+  myservo.write( 88.1505, 2.05,true);
+  myservo.write( 88.2943, 2.05,true);
+  myservo.write( 88.4506, 2.05,true);
+  myservo.write( 88.6205, 2.05,true);
+  myservo.write( 88.8052, 2.05,true);
+  myservo.write( 89.0060, 2.05,true);
+  myservo.write( 89.2243, 2.05,true);
+  myservo.write( 89.4616, 2.05,true);
+  myservo.write( 89.7196, 2.05,true);
+
+  myservo.write( 90.0000, 2.05,true); // Max Speed and Mid Stroke
+
+  myservo.write( 90.2804, 2.05,true);
+  myservo.write( 90.5384, 2.05,true);
+  myservo.write( 90.7757, 2.05,true);
+  myservo.write( 90.9940, 2.05,true);
+  myservo.write( 91.1948, 2.05,true);
+  myservo.write( 91.3795, 2.05,true);
+  myservo.write( 91.5494, 2.05,true);
+  myservo.write( 91.7057, 2.05,true);
+  myservo.write( 91.8495, 2.05,true);
+  myservo.write( 91.9817, 2.05,true);
+  myservo.write( 92.1034, 2.05,true);
+  myservo.write( 92.2153, 2.05,true);
+  myservo.write( 92.3182, 2.05,true);
+  myservo.write( 92.4129, 2.05,true);
+
+  myservo.write( 92.5000, 2.05,true); // All the Way to the Right
+
+  myservo.write( 92.4129, 2.05,true);
+  myservo.write( 92.3182, 2.05,true);
+  myservo.write( 92.2153, 2.05,true);
+  myservo.write( 92.1034, 2.05,true);
+  myservo.write( 91.9817, 2.05,true);
+  myservo.write( 91.8495, 2.05,true);
+  myservo.write( 91.7057, 2.05,true);
+  myservo.write( 91.5494, 2.05,true);
+  myservo.write( 91.3795, 2.05,true);
+  myservo.write( 91.1948, 2.05,true);
+  myservo.write( 90.9940, 2.05,true);
+  myservo.write( 90.7757, 2.05,true);
+  myservo.write( 90.5384, 2.05,true);
+  myservo.write( 90.2804, 2.05,true);
+  
+  myservo.write( 90.0000, 2.05,true); // Max Speed and Mid Stroke
+
+  myservo.write( 89.7196, 2.05,true);
+  myservo.write( 89.4616, 2.05,true);
+  myservo.write( 89.2243, 2.05,true);
+  myservo.write( 89.0060, 2.05,true);
+  myservo.write( 88.8052, 2.05,true);
+  myservo.write( 88.6205, 2.05,true);
+  myservo.write( 88.4506, 2.05,true);
+  myservo.write( 88.2943, 2.05,true);
+  myservo.write( 88.1505, 2.05,true);
+  myservo.write( 88.0183, 2.05,true);
+  myservo.write( 87.8966, 2.05,true);
+  myservo.write( 87.7847, 2.05,true);
+  myservo.write( 87.6818, 2.05,true);
+  myservo.write( 87.5871, 2.05,true);
+  
+}
